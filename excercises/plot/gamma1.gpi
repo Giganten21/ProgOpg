@@ -1,0 +1,14 @@
+set terminal svg
+set key bottom right
+set output "Lngamma.svg"
+set xlabel "x"
+set ylabel "y"
+set tics out
+set xzeroaxis
+set yzeroaxis
+set samples 800
+set title "Lngamma function"
+plot [0:5][0:5] \
+ "lngamma.data" with lines linetype 1 title "theory" \
+,"factorial.data" using ($1+1):(log($2)) with points pointtype 4 title "experiment" \
+#,gamma(x) with lines linetype 2 title "built-in gamma"

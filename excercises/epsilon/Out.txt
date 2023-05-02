@@ -1,0 +1,12 @@
+my max int = 2147483647
+True max int = 2147483647
+my min int = -2147483648
+True min int = -2147483648
+Float=2.22044604925031E-16, Double=1.192093E-07 and 2**-52 = 2.22044604925031E-16
+sumA-1 = 0.000000e+000 should be 1.110223e-010
+sumB-1 = 1.110223e-010 should be 1.110223e-010
+As sumA starts as an int, it does not add the same. When adding floats.
+d1=7.999999999999999e-001
+d2=8.000000000000000e-001
+d1==d2 ? => False
+With approx, d1=d2 True

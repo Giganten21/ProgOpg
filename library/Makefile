@@ -19,5 +19,8 @@ main.exe: main.cs matrix.dll
 matrix.dll : vector.cs matrix.cs
 	$(CSC) -target:library -out:$@ $^
 
+qsqr.dll : vector.cs matrix.cs
+	$(CSC) -target:library -out:$@ $^
+
 clean:
 	$(RM) *.dll *.exe [Oo]ut*

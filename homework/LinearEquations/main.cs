@@ -13,7 +13,7 @@ static void Main(string[] args){
 		for(int j=0;j<m;j++)A[i,j]=rnd.NextDouble();
 	matrix Q=A.copy();
 	QRGS.decomp(Q,R);
-
+	WriteLine("Part A)");
 	A.print("A=");
 	Q.print("Q=");
 	R.print("R=");

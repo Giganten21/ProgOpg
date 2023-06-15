@@ -1,0 +1,1 @@
+Assembly '/home/andreasklo21/repository/ProgOpg/homework/Splines/main.exe' doesn't have an entry point.

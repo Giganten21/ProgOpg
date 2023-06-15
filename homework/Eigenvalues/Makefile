@@ -1,6 +1,6 @@
 DIR = ~/repository/ProgOpg/library
 
-Ns = 1 2 3 4
+Ns = 3 4
 Out.txt : main.exe
 	>$@
 	for N in $(Ns); do \

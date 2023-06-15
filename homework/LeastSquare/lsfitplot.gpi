@@ -1,0 +1,11 @@
+set terminal svg
+set key bottom left
+set output "lsfitplot.svg"
+set xlabel "x"
+set ylabel "y"
+set title "Least-square fit"
+plot \
+"outdata.txt" index 0 with errorbars title "data"\
+,"outdata.txt" index 1 with lines title "F_{c}(t) = ln(a) - lambda*t"\
+,"outdata.txt" index 2 with lines title "F_{{c}+{delta c}}(t)"\
+,"outdata.txt" index 3 with lines title "F_{{c}-{delta c}}(t)"\

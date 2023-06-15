@@ -20,7 +20,7 @@ public static class jacobi{
 		}
 	}
 
-	public static void cyclic(matrix A){
+	public static matrix cyclic(matrix A){
 		int n = A.size1;
 		var V = new matrix(n,n);
 		V.set_identity();
@@ -44,5 +44,6 @@ public static class jacobi{
 				}
 			}
 		}while(changed);
+		return V;
 	}
 }

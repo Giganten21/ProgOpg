@@ -19,14 +19,8 @@ class main{
 		WriteLine("Laver A og kører jacobi som bliver til D og laver V."); 
 		A.print("A=");
 		var D = A.copy();
-		jacobi.cyclic(D);
+		matrix V = jacobi.cyclic(D);
 		D.print("D=");
-
-		var V = new matrix(A.size1,A.size2);
-		for(int i=0;i<A.size1;i++)
-			for(int j=0;j<A.size2;j++){
-				if(i==j)V[i,j] = D[i,j];
-			}
 		V.print("V=");
 
 		var x = V.T*A*V;

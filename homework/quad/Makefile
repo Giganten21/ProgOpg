@@ -1,18 +1,20 @@
-erfplot.svg : erfplot.gpi
-	gnuplot $<
-
-out.txt : main.exe
-	mono $< >  $@ 2>log
+all: Out.txt Erfplot.svg
 
 out-erf.txt : main-erf.exe
-	mono $< >  $@ 2>logerf
+	mono $< 1>  $@ 2> log
 
-main.exe : main.cs lib.dll
+Out.txt : main.exe Makefile
+	mono $< 1>  $@ 2> logerf
+
+Erfplot.svg : erfplot.gpi out-erf.txt Makefile
+	gnuplot $<
+
+main-erf.exe : main-erf.cs lib.dll
 	mcs -target:exe -out:$@ \
 		$(filter %.cs,$^) \
 		$(addprefix -reference:,$(filter %.dll,$^))
 
-main-erf.exe : main-erf.cs lib.dll
+main.exe : main.cs lib.dll
 	mcs -target:exe -out:$@ \
 		$(filter %.cs,$^) \
 		$(addprefix -reference:,$(filter %.dll,$^))

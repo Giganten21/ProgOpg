@@ -1,5 +1,5 @@
 DIR = ~/repository/ProgOpg/library
-all: sinplot.svg fricplot.svg
+all: Sinplot.svg Fricplot.svg
 
 
 Out.txt : main.exe
@@ -8,10 +8,10 @@ Out.txt : main.exe
 Out-fric.txt : main_fric.exe
 	mono $< 1> $@ 2> logfric
 
-sinplot.svg : sinplot.gpi Out.txt Makefile
+Sinplot.svg : sinplot.gpi Out.txt Makefile
 	gnuplot $<
 
-fricplot.svg : fricplot.gpi Out-fric.txt Makefile
+Fricplot.svg : fricplot.gpi Out-fric.txt Makefile
 	gnuplot $<
 
 main_fric.exe : main_fric.cs lib.dll

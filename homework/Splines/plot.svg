@@ -331,14 +331,29 @@
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
-	<g id="gnuplot_plot_1b" ><title>analytical</title>
+	<g id="gnuplot_plot_1b" ><title>points</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(489.99,57.91)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+		<text><tspan font-family="Arial" >points</tspan></text>
+	</g>
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<use xlink:href='#gpPt6' transform='translate(372.53,416.60) scale(4.50)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt6' transform='translate(417.92,404.47) scale(4.50)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt6' transform='translate(463.32,392.33) scale(4.50)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt6' transform='translate(508.71,380.19) scale(4.50)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt6' transform='translate(554.11,368.05) scale(4.50)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt6' transform='translate(519.66,54.01) scale(4.50)' color='rgb(148,   0, 211)'/>
+</g>
+	</g>
+	<g id="gnuplot_plot_2b" ><title>analytical</title>
+<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<g transform="translate(489.99,75.91)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
 		<text><tspan font-family="Arial" >analytical</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(148,   0, 211)'  d='M498.38,54.01 L540.94,54.01 M372.53,422.40 L373.44,422.03 L374.35,421.64 L375.27,421.23 L376.18,420.81 L377.09,420.38
+	<path stroke='rgb(  0, 158, 115)'  d='M498.38,72.01 L540.94,72.01 M372.53,422.40 L373.44,422.03 L374.35,421.64 L375.27,421.23 L376.18,420.81 L377.09,420.38
 		L378.00,419.93 L378.92,419.46 L379.83,418.98 L380.74,418.48 L381.65,417.97 L382.57,417.44 L383.48,416.90 L384.39,416.34
 		L385.30,415.77 L386.22,415.18 L387.13,414.57 L388.04,413.95 L388.95,413.32 L389.87,412.67 L390.78,412.00 L391.69,411.32
 		L392.60,410.62 L393.52,409.91 L394.43,409.18 L395.34,408.44 L396.25,407.68 L397.17,406.90 L398.08,406.11 L398.99,405.31
@@ -365,14 +380,14 @@
 		L545.89,74.75 L546.81,71.45 L547.72,68.13 L548.63,64.80 L549.54,61.45 L550.46,58.09 L551.37,54.71 L552.28,51.32
 		L553.19,47.91 L554.11,44.49  '/></g>
 	</g>
-	<g id="gnuplot_plot_2b" ><title>interpolation</title>
+	<g id="gnuplot_plot_3b" ><title>interpolation</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<g transform="translate(489.99,75.91)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
+	<g transform="translate(489.99,93.91)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
 		<text><tspan font-family="Arial" >interpolation</tspan></text>
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(  0, 158, 115)'  d='M498.38,72.01 L540.94,72.01 M372.53,422.40 L373.44,422.03 L374.35,421.64 L375.27,421.23 L376.18,420.81 L377.09,420.38
+	<path stroke='rgb( 86, 180, 233)'  d='M498.38,90.01 L540.94,90.01 M372.53,422.40 L373.44,422.03 L374.35,421.64 L375.27,421.23 L376.18,420.81 L377.09,420.38
 		L378.00,419.93 L378.92,419.46 L379.83,418.98 L380.74,418.48 L381.65,417.97 L382.57,417.44 L383.48,416.90 L384.39,416.34
 		L385.30,415.77 L386.22,415.18 L387.13,414.57 L388.04,413.95 L388.95,413.32 L389.87,412.67 L390.78,412.00 L391.69,411.32
 		L392.60,410.62 L393.52,409.91 L394.43,409.18 L395.34,408.44 L396.25,407.68 L397.17,406.90 L398.08,406.11 L398.99,405.31
@@ -399,7 +414,7 @@
 		L545.89,300.98 L546.81,297.68 L547.72,294.37 L548.63,291.03 L549.54,287.69 L550.46,284.32 L551.37,280.95 L552.28,277.55
 		L553.19,274.14 L554.11,270.72  '/></g>
 	</g>
-<g fill="none" color="white" stroke="rgb(  0, 158, 115)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+<g fill="none" color="white" stroke="rgb( 86, 180, 233)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>

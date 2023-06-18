@@ -1,0 +1,9 @@
+set terminal svg
+set key bottom left
+set output "Erfplot.svg"
+set xlabel "x"
+set ylabel "y"
+set title "Erf(x) implementation vs tabel values"
+plot \
+"out-erf.txt" index 0 with points pt 7 ps 0.5 title "Table values" \
+,"out-erf.txt" index 1 with lines title "Implementation" \

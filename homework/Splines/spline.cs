@@ -23,7 +23,8 @@ public class spline{
 		int i=binsearch(x,z);
 		double dx=x[i+1]-x[i]; if(!(dx>0)) throw new Exception("uups...");
         	double dy=y[i+1]-y[i];
-		return y[i]*(z-x[i])+dy/dx*(Pow((z-x[i]),2)/2);
-		
+		double yi = y[i];
+		double pi = dy/dx;
+		return yi*(z-x[i]) + pi*(Pow((z-x[i]),2)/2);
 	}
 }

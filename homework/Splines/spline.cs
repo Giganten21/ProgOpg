@@ -21,10 +21,17 @@ public class spline{
 
 	public static double linterpInteg(double[] x, double[] y, double z){
 		int i=binsearch(x,z);
+		double sum = 0;
+		for (int j=0; j<i; j++){
+			double dyj = y[j+1] -y[j];
+			double dxj = x[j+1] -x[j];
+			sum += y[j]*dxj + 1.0/2*dyj*dxj;
+		}
+
 		double dx=x[i+1]-x[i]; if(!(dx>0)) throw new Exception("uups...");
         	double dy=y[i+1]-y[i];
-		double yi = y[i];
 		double pi = dy/dx;
-		return yi*(z-x[i]) + pi*(Pow((z-x[i]),2)/2);
+		sum += y[i]*(z-x[i])+1.0/2*pi*(z-x[i])*(z-x[i]);
+		return sum;
 	}
 }

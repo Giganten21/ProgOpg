@@ -60,4 +60,4 @@
 15 1.56044200650544
 
 
-T_1/2 = 4.12021983543085 days real is 3.631 days. Uncertainty 4.41288218612459 days
+T_1/2 = 4.38379963473882 days real is 3.631 days. Uncertainty -0.158115616203623 days

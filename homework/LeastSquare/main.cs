@@ -46,8 +46,7 @@ public static void Main(){
 	for(double z=x[0];z<=x[8];z++) WriteLine($"{z} {Fc(fs,c-dc,z)}");
 	Write("\n\n");
 
-	double lambda = (lny[8] - lny[0]) / (x[8] - x[0]);
-	double dlambda = (Math.Log(2) / Math.Pow(lambda,2))*dlny[8];
-	WriteLine($"T_1/2 = {-Math.Log(2)/lambda} days real is 3.631 days. Uncertainty {dlambda} days");
+	double lambda = c[1];
+	WriteLine($"T_1/2 = {-Math.Log(2)/c[1]} days real is 3.631 days. Uncertainty {c[1]} days");
 	}//Main
 }//main

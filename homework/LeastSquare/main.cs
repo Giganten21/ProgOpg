@@ -47,6 +47,7 @@ public static void Main(){
 	Write("\n\n");
 
 	double lambda = (lny[8] - lny[0]) / (x[8] - x[0]);
-	WriteLine($"T_1/2 = {-Math.Log(2)/lambda} days real is 3.631 days.");
+	double dlambda = (Math.Log(2) / Math.Pow(lambda,2))*dlny[8];
+	WriteLine($"T_1/2 = {-Math.Log(2)/lambda} days real is 3.631 days. Uncertainty {dlambda} days");
 	}//Main
 }//main

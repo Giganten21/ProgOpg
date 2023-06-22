@@ -1,6 +1,6 @@
 set terminal svg
 set key bottom left
-set output "sinout.svg"
+set output "Sinout.svg"
 set xlabel "x"
 set ylabel "y"
 set title "U'' = - U aka sin(x) = -cos(x)"

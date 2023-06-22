@@ -25,6 +25,17 @@ class main{
 
 		var x = V.T*A*V;
 		x.print("V.T*A*V=");
+		WriteLine("Dette er D");
+
+		var y = V*D*V.T;
+		y.print("V*D*V.T=");
+		WriteLine("Detter er A");
+		var z1 = V*V.T;
+		var z2 = V.T*V;
+		WriteLine("Tjekker at disse er = I");
+		z1.print("V*V.T=");
+		z2.print("V.t*V=");
+
 
 		
 

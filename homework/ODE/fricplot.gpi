@@ -1,6 +1,6 @@
 set terminal svg
 set key bottom right
-set output "fricout.svg"
+set output "Fricout.svg"
 set xlabel "x"
 set ylabel "y"
 set title "theta''(t) + b*theta'(t) + c*sin(theta(t)) = 0"

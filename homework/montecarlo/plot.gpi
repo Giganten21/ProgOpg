@@ -1,0 +1,10 @@
+set terminal svg
+set key top left
+set output "plot.svg"
+set xlabel "x"
+set ylabel "Error"
+set title "Error plot"
+set logscale y 10
+plot \
+"Out.txt" index 0 with points pointtype 7 title "Error" \
+,1/sqrt(x) with lines title "1/Sqrt(n)" \

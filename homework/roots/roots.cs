@@ -1,9 +1,8 @@
 using System;
 using static System.Console;
 using static System.Math;
-
-public static class roots{
-	public static vector newton(Func<vector,vector>f, vector x, double e=1e-2){
+public static partial class roots{
+public static vector newton(Func<vector, vector> f, vector x, double e=1e-2){
 		vector fx=f(x),z,fz;
 		int n = x.size;
 		vector dx, deltx;
@@ -24,8 +23,8 @@ public static class roots{
 				x[j] -= dx[j];
 			}
 			var R = new matrix(n,n);
-			var (Q,R) = QRGS.decomp(J);
-			deltx = QRGS.solve(Q,R-fx);
+			QRGS.decomp(J,R);
+			deltx = QRGS.solve(J,R,-fx);
 			double lambda = 2;
 			do{
 				lambda /= 2;

@@ -8,7 +8,7 @@ main.exe : main.cs lib.dll
 		$(filter %.cs,$^) \
 		$(addprefix -reference:,$(filter %.dll,$^))
 
-lib.dll : roots.cs $(DIR)/qrgs.cs $(DIR)/matrix.cs $(DIR)/vector.cs
+lib.dll : qnewton.cs $(DIR)/matrix.cs $(DIR)/vector.cs
 	mcs -target:library -out:$@ \
 		$(filter %.cs,$^) \
 		$(addprefix -reference:,$(filter %.dll,$^))

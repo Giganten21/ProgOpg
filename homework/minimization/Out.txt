@@ -1,0 +1,16 @@
+Rosenbrock's valley function
+start point:         3          3 
+minimum    :         1          1 
+f(x_min)          = 7.747399E-10
+|gradient| goal   = 0
+|gradient| actual = 3.214344E-05
+Number of steps: 51
+
+
+Himmelblau's function
+start point:         5          3 
+minimum    :     -2.81       3.13 
+f(x_min)          = 9.794395E-13
+|gradient| goal = 0
+|gradient| actual = 1.413644E-05
+Number of steps: 10

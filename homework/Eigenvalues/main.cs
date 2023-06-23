@@ -5,12 +5,13 @@ using static System.Console;
 class main{
 	
 	static void Main(string[] args){
-		int n=2;
-		foreach(string arg in args){
+		var rand = new Random();
+		int n=rand.Next(3,7);
+/*		foreach(string arg in args){
 			var words = arg.Split(':');
 			if(words[0]=="-size")n=(int)double.Parse(words[1]);
 			}
-		var A = new matrix(n,n);
+*/		var A = new matrix(n,n);
 		var rnd = new Random(1);
 		for( int i=0;i<A.size1;i++)
 			for( int j=i;j<A.size2;j++){

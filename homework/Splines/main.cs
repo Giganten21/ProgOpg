@@ -23,6 +23,11 @@ public static void Main(){
 	for (z=x[0], i=0; i<N; z=x[0]+(++i)*step){
 		WriteLine($"{z} {Pow(z,2)*2+6*z} {spline.linterpInteg(x,y,z)}");
 	}
-	
+	WriteLine("\n\n");
+	double l;
+	for (i = 0; i<n;i++){
+		l = i*PI
+		WriteLine($"{l} {Pow(l,2)*2+6*l}");
+	}	
 	}
 }

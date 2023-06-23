@@ -1,4 +1,5 @@
 all: Out.txt Erfplot.svg
+DIR = ../../library
 
 out-erf.txt : main-erf.exe
 	mono $< 1>  $@ 2> log
@@ -19,7 +20,7 @@ main.exe : main.cs lib.dll
 		$(filter %.cs,$^) \
 		$(addprefix -reference:,$(filter %.dll,$^))
 
-lib.dll : integrate.cs erf.cs
+lib.dll : integrate.cs erf.cs $(DIR)/erf.cs 
 	mcs -target:library -out:$@ \
 		$(filter %.cs,$^) \
 		$(addprefix -reference:,$(filter %.dll,$^))

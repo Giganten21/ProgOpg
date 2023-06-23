@@ -16,7 +16,11 @@ static void Main(){
 	}
 	WriteLine("\n");
 	//double step = 0.01;
-	for(double j = 0; j<1; j+=1.0*0.01){
+	for(double j = -3; j<3; j+=1.0*0.32){
+		WriteLine($"{j} {er.erf(j)}");
+	}
+	WriteLine("\n\n");
+	for(double j = -3; j<3; j+=1.0*0.01){
 		WriteLine($"{j} {sfuns.erf(j)}");
 	}
 }

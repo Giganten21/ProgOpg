@@ -1,0 +1,9 @@
+set terminal svg
+set key top left
+set output "NNplot.svg"
+set xlabel "x"
+set ylabel "y"
+set title "Fit ann(10) Cos(5*x-1)*Exp(-x*x)"
+plot \
+"Out.txt" index 1 with lines title "predict" \
+,"Out.txt" index 0 with points pointtype 2 title "actual" \

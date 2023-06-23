@@ -1,26 +1,17 @@
-DIR = ~/repository/ProgOpg/library
+DIR = ../../library
 
 LeastFitPlot.svg : lsfitplot.gpi outdata.txt
 	gnuplot $<	
 
 outdata.txt : main.exe
-	mono $< >  $@ 2>log
+	mono $< >  $@
 
-
-main.exe : main.cs least.dll gsqr.dll
+main.exe : main.cs lib.dll 
 	mcs -target:exe -out:$@ \
 		$(filter %.cs,$^) \
 		$(addprefix -reference:,$(filter %.dll,$^))
 
-least.dll : least.cs gsqr.dll
-	mcs -target:library -out:$@ \
-		$(filter %.cs,$^) \
-		$(addprefix -reference:,$(filter %.dll,$^))
-
-gsqr.dll: \
-	$(DIR)/gsqr.cs \
-	$(DIR)/matrix.cs \
-	$(DIR)/vector.cs
+lib.dll : least.cs $(DIR)/qrgs.cs $(DIR)/vector.cs $(DIR)/matrix.cs
 	mcs -target:library -out:$@ \
 		$(filter %.cs,$^) \
 		$(addprefix -reference:,$(filter %.dll,$^))

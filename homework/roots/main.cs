@@ -10,9 +10,14 @@ public static class main{
 		WriteLine("Function is x**2 + 4x - 3");
 		vector s0 = new vector(1); //start value vector
 		s0[0] = 2; 		   //start value
+		vector s00 = new vector(1);
+		s00[0] = -5;
 		var root1 = roots.newton(f,s0);
-		root1.print("Roots = ");
-		f(root1).print("f(root) should be 0: \n");
+		var root11 = roots.newton(f,s00);
+		root1.print("Root 1 = ");
+		root11.print("Root 2 = ");
+		f(root1).print("f(root 1) should be 0: ");
+		f(root11).print("f(root 2) should be 0: ");
 		WriteLine("\n");
 
 		Func<vector,vector> f1 = x => new vector (2*x[0]*x[1], -x[1]*x[1]+3);
@@ -20,7 +25,7 @@ public static class main{
 		vector s1 = new vector(1.0,1.0);
 		var root2 = roots.newton(f1,s1);
 		root2.print("Roots = ");
-		f1(root2).print("f(root) should be 0: \n");
+		f1(root2).print("f(root) should be 0: ");
 		
 		WriteLine("\n");
 		//f(x,y) = (1-x)**2+100(y-x2)**2

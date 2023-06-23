@@ -22,9 +22,9 @@ public static vector newton(Func<vector, vector> f, vector x, double e=1e-2){
 				}
 				x[j] -= dx[j];
 			}
-			var R = new matrix(n,n);
-			QRGS.decomp(J,R);
-			deltx = QRGS.solve(J,R,-fx);
+			
+			var (Q,R) = QRGS.decomp(J);
+			deltx = QRGS.solve(Q,R,-fx);
 			double lambda = 2;
 			do{
 				lambda /= 2;

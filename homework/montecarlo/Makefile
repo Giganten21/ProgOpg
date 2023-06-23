@@ -1,10 +1,11 @@
-DIR = ~/repository/ProgOpg/library
+DIR = ../../library
+iall = plot.svg Out.txt
+
+plot.svg : plot.gpi Out.txt
+	gnuplot $<
 
 Out.txt : main.exe
 	mono main.exe > Out.txt
-
-plot.svg : plot.gpi Out.txt Makefile
-	gnuplot $<
 
 main.exe : main.cs lib.dll
 	mcs -target:exe -out:$@ \

@@ -37,13 +37,18 @@ public static void Main(){
 	Write("\n\n");
 	var fs = new Func<double,double>[] { z => 1.0, z => z, z => z*z };
 	(vector c, matrix S) = lsfit.fit(fs,x,lny,dlny);
+	//WriteLine("fit works");
 	var dc = new vector(fs.Length);
+	//WriteLine("fs");
 	for(int i=0;i<fs.Length;i++)dc[i]=Sqrt(S[i,i]);
 	for(double z=x[0];z<=x[8];z++) WriteLine($"{z} {Fc(fs,c,z)}");
+	//WriteLine("2222");
 	Write("\n\n");
 	for(double z=x[0];z<=x[8];z++) WriteLine($"{z} {Fc(fs,c+dc,z)}");
+	//WriteLine("#####");
 	Write("\n\n");
 	for(double z=x[0];z<=x[8];z++) WriteLine($"{z} {Fc(fs,c-dc,z)}");
+	//WriteLine("44444");
 	Write("\n\n");
 
 	double lambda = c[1];

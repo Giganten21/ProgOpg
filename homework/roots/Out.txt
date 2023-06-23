@@ -1,14 +1,14 @@
 #######test######
 Function is x**2 + 4x - 3
-Roots =      0.646 
-f(root) should be 0: 
-  8.33e-05 
+Root 1 =      0.646 
+Root 2 =      -4.65 
+f(root 1) should be 0:   8.33e-05 
+f(root 2) should be 0:   0.000434 
 
 
 Function is f(x,y) = (2*x*y, -y^2+3)
 Roots =  -6.34e-12       1.73 
-f(root) should be 0: 
- -2.19e-11  -0.000319 
+f(root) should be 0:  -2.19e-11  -0.000319 
 
 
 ######Rosenbrock's valley#####

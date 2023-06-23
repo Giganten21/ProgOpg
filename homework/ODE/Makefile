@@ -1,4 +1,4 @@
-DIR = ~/repository/ProgOpg/library
+DIR = ../../library
 all: Sinplot.svg Fricplot.svg
 
 

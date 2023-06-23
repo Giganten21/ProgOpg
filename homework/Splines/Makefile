@@ -4,6 +4,7 @@ PLOT = plot
 PLOTFILE=$(PLOT).$(FMT)
 DATA = out.txt
 ECHO=/bin/echo
+all=plot.svg
 
 plot.svg: plot.gpi out.txt
 	gnuplot $<

@@ -46,7 +46,7 @@ public static class jacobi{
 			}
 		end +=1;
 		}while(changed);
-		WriteLine($"{end}");
+		//WriteLine($"{end}");
 		return V;
 	}
 }

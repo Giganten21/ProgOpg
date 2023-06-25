@@ -1,5 +1,6 @@
 using System;
 using static System.Math;
+using static System.Console;
 
 public static class jacobi{
 	public static void timesJ(matrix A, int p, int q, double theta){
@@ -24,7 +25,7 @@ public static class jacobi{
 		int n = A.size1;
 		var V = new matrix(n,n);
 		V.set_identity();
-
+		int end = 0;
 		bool changed;
 		do{
 		changed=false;
@@ -43,7 +44,9 @@ public static class jacobi{
 				timesJ(V,p,q, theta); // V←V*J
 				}
 			}
+		end +=1;
 		}while(changed);
+		WriteLine($"{end}");
 		return V;
 	}
 }

@@ -21,9 +21,9 @@ static void Main(){
 	//	Write($"{a} ");
 	//}
 
-	var D = A.copy();
-	var (H,V) = jacobi.hessenberg(D);
-	D.print("D=");
+	//var D = A.copy();
+	var (H,V) = jacobi.hessenberg(A);
+	//D.print("D=");
 	H.print("H=");
 	V.print("V=");
 }

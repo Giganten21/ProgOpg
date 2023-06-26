@@ -1,30 +1,35 @@
 using System;
 using static System.Console;
 using static System.Math;
+using System.Diagnostics;
 
 class main{
 static void Main(){
-	int n = 6;
-	var rnd = new Random(1);
+	var rand = new Random();
+	int n = rand.Next(3,8);
+	var rnd = new Random(n);
 	var A = new matrix(n,n);
 	for( int i=0;i<A.size1;i++)
 		for( int j=i;j<A.size2;j++){
 			A[i,j]=A[j,i]=rnd.NextDouble();
 		}
 	A.print("A=");
-	//var Q = new matrix(A.size1,A.size2);
-	//Q.set_identity();
-	//Q[0,3] = 383;
-	//Q.print("Q=");
-	//for(int k=0; k<A.size2;k++){
-	//	var a = Q[0,k];
-	//	Write($"{a} ");
-	//}
-
-	//var D = A.copy();
-	var (H,V) = jacobi.hessenberg(A);
-	//D.print("D=");
+	Stopwatch watch = new Stopwatch();
+	watch.Start();
+	var (H,Q) = jacobi.hessenberg(A);
+	watch.Stop();
+	WriteLine($"The Hessenberg factorization took {watch.Elapsed.TotalSeconds} seconds.");
 	H.print("H=");
-	V.print("V=");
+	Q.print("Q=");
+	
+	WriteLine("Checking A = QHQ.T");
+	var QHQT = Q*H*Q.T;
+	QHQT.print("QHQT=");
+	var QTQ = Q.T*Q;
+	QTQ.print("This should be equal to the identity matrix:");
+	WriteLine("Since this is furfilled H must be the lower Hessenberg form of the matrix A");
+	var det = jacobi.det(H);
+	WriteLine($"Determinant = {det}");
+
 }
 }

@@ -1,0 +1,9 @@
+set terminal svg
+set key top left
+set output "Compare.svg"
+set xlabel "Matrix size (NxN)"
+set ylabel "Time (s)"
+set title "Comparing speed of Hessenberg and QR"
+plot \
+"stopwatch.txt" index 0 with lines title "Hessenberg factorization" \
+,"stopwatch.txt" index 1 with lines title "QR factorization" \

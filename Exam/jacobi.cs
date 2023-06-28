@@ -59,7 +59,7 @@ public static class jacobi{
 			for(int q = p+1; q<n; q++){
 				double apq = A[p-1,q];
 				double app = A[p-1,p];
-				double theta = Atan(-apq/app);
+				double theta = Atan2(-apq,app);
 				A = timesJ(A,p,q,theta);
 				A = Jtimes(A,p,q,-theta);
 				Q = timesJ(Q,p,q,theta);

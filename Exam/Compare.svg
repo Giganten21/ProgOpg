@@ -149,8 +149,8 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(148,   0, 211)'  d='M290.67,72.01 L333.23,72.01 M85.09,422.09 L122.76,421.98 L172.99,419.93 L248.33,409.37 L323.68,381.73 L386.46,331.46
-		L449.25,285.73 L512.03,185.99 L574.82,95.12  '/></g>
+	<path stroke='rgb(148,   0, 211)'  d='M290.67,72.01 L333.23,72.01 M85.09,422.03 L122.76,422.06 L172.99,419.93 L248.33,409.36 L323.68,383.03 L386.46,328.98
+		L449.25,283.72 L512.03,186.78 L574.82,90.75  '/></g>
 	</g>
 	<g id="gnuplot_plot_2" ><title>QR factorization</title>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
@@ -159,8 +159,8 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(  0, 158, 115)'  d='M290.67,90.01 L333.23,90.01 M85.09,421.90 L122.76,421.29 L172.99,421.11 L248.33,415.85 L323.68,404.17 L386.46,386.26
-		L449.25,358.54 L512.03,314.66 L574.82,260.41  '/></g>
+	<path stroke='rgb(  0, 158, 115)'  d='M290.67,90.01 L333.23,90.01 M85.09,421.87 L122.76,421.24 L172.99,421.04 L248.33,415.93 L323.68,405.31 L386.46,388.65
+		L449.25,359.82 L512.03,314.61 L574.82,261.13  '/></g>
 	</g>
 <g fill="none" color="white" stroke="rgb(  0, 158, 115)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>

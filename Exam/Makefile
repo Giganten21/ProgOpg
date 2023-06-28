@@ -27,4 +27,4 @@ lib.dll : jacobi.cs $(DIR)/matrix.cs $(DIR)/vector.cs $(DIR)/qrgs.cs
 		$(addprefix -reference:,$(filter %.dll,$^))
 
 clean :
-	rm -f *.dll *.exe [oO]ut* *.svg *.txt
+	rm -f *.dll *.exe [oO]ut* *.svg stopwatch*

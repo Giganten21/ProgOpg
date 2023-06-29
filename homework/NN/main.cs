@@ -45,6 +45,7 @@ public static void Main(){
 		WriteLine($"{x} {ypred}");
 	}
 	
+	WriteLine("\nThe data is plotted in NNplot.svg.");	
 
 }
 }

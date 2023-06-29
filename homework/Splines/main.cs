@@ -26,7 +26,7 @@ public static void Main(){
 	WriteLine("\n\n");
 	double l;
 	for (i = 0; i<n;i++){
-		l = i*PI
+		l = i*PI;
 		WriteLine($"{l} {Pow(l,2)*2+6*l}");
 	}	
 	}
